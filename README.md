@@ -1,5 +1,15 @@
 # Tech Interview Stage notes
 
+Before running the PHP server from the root of this repository,
+you will need to run `db_init.sql`. This will set up the user
+that is configured within the `/inc/definitions.php` file. As
+well as this, it creates a DB and table for the user logins to
+go into. The default username/password for the app is
+`admin:changeme`, with the username/password for the database
+connection being found in `/inc/definitions.php`. All the
+database connection settings that are configured beyond standard
+can all be found within there also.
+
 ## Task 1
 
 ## Task 2
