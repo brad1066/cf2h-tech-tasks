@@ -1,0 +1,24 @@
+{
+    "dob": "1989-11-06",
+    "tel": "07493992165",
+    "name": {
+        "fname": "Ankita",
+        "lname": "pandey",
+        "title": ""
+    },
+    "email": "ankitapandey1106@gmail.com",
+    "address": {
+        "city": "London, ,",
+        "number": "Flat 3,",
+        "street": "254 Boardwalk Place,",
+        "country": "United Kingdom",
+        "post_code": "E14 5GB, ,"
+    },
+    "insurance": {
+        "auth_code": "64828187",
+        "insurer_id": 23,
+        "insurer_name": "BUPA",
+        "policy_number": "0570609387"
+    },
+    "secondary_email": ""
+}
