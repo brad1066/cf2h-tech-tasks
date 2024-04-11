@@ -20,7 +20,7 @@ if ($_SESSION['authenticated'] != true) {
         <h1>Weather Lookup</h1>
 
         <!-- Change 2: Added a form to submit the city name to the server -->
-        <form id="weather-form" class="card" method="post">
+        <form id="weather-form" class="search-form" method="post">
             <input type="text" name="city" id="city" placeholder="City" />
             <button type="submit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor">
@@ -35,7 +35,7 @@ if ($_SESSION['authenticated'] != true) {
         <div? id="weather-card" class="card">
             <h2 class="card-header">Weather in <span id="location-name">no location searched</span></h2>
             <p>Weather: <span id="weather-output">-</span></p>
-            <p>Temperature: <span id="temp-output">-&deg;</span></p>
+            <p>Temperature: <span id="temp-output">-</span></p>
         </div>
     </main>
 </body>

@@ -1,7 +1,12 @@
 :root {
     --primary-color: #0077cc;
     --secondary-color: #f0f0f0;
+    --hover-color: #e0e0e0;
+    --border-color: #909090;
+}
 
+* {
+    box-sizing: border-box;
 }
 
 .hidden {
@@ -15,7 +20,6 @@
     border-radius: 0.25rem;
     margin: 10px 0;
     padding: 10px;
-    box-sizing: border-box;
     transition: margin 500ms;
 }
 
@@ -52,8 +56,26 @@ main {
     border: 1px solid #e0e0e0;
     border-radius: 0.25rem;
     padding: 1rem;
-    box-sizing: border-box;
     margin: 1rem 1rem;
+}
+
+.button,
+button {
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+
+    transition: background-color 250ms ease-in-out;
+}
+
+.button:hover,
+button:hover {
+    background-color: var(--hover-color);
 }
 
 .card-header {
@@ -108,23 +130,16 @@ input[type="password"] {
     padding: 0.5rem;
     border: 0px solid #e0e0e0;
     border-bottom-width: 2px;
-    box-sizing: border-box;
     transition: border-color 250ms;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus {
     outline: none;
-    border-color: var(--primary-color);
 }
 
 button {
     grid-area: submit;
-    padding: 0.5rem;
-    border: 1px solid #e0e0e0;
-    border-radius: 0.25rem;
-    background-color: #f0f0f0;
-    cursor: pointer;
 }
 
 #notices {
@@ -143,18 +158,42 @@ button {
     display: flex;
 }
 
-#weather-form button[type="submit"] {
+.search-form {
+
+    overflow: hidden;
+    border: var(--border-width,  2px) var(--border-style, solid) var(--border-color, var(--hover-color));
+    border-radius: var(--border-radius, 100vw);
+
+    transition: border-color 250ms ease-in-out;
+}
+
+.search-form:focus-within,
+.search-form:hover{
+    --border-color: var(--primary-color);
+}
+
+.search-form input[type="text"],
+.search-form button[type="submit"] {
     border: none;
-    border-radius: 100vw;
+}
+
+.search-form input[type="text"] {
+    padding: 0.5rem;
+    line-height: 0;
+    width: 100%;
+}
+
+.search-form button[type="submit"] {
     line-height: 0;
     padding: 0.75rem;
     background: none;
     cursor: pointer;
+
     transition: background-color 250ms ease-in-out;
 }
 
-#weather-form button[type="submit"]:hover {
-    background-color: var(--secondary-color);
+.search-form button[type="submit"]:hover {
+    background-color: var(--hover-color);
 }
 
 #weather-card {

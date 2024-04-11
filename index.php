@@ -19,6 +19,9 @@ $user = (object) $_SESSION['user'];
 <body>
     <main>
         <h1>Dashboard - <?php echo $user->first_name ?> <?php echo $user->last_name ?></h1>
+
+        <button id="logout-button" class="button">Logout</button>
+        <a href="/weather" class="button">Weather</a>
     </main>
 </body>
 
