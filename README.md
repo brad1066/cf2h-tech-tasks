@@ -32,7 +32,7 @@ JQuery and data calls from `/resources/js/script.js`
   `/resources/js/script.js:70`)
 * Passed a CSRF value in the request as a layer of protection
   against the server endpoint being hit by a potentially
-  malicious user (see `r/esources/js/script.js:59&75`)
+  malicious user (see `/resources/js/script.js:59&75`)
 * Check that the user is authenticated (stored in session) and
   that the CSRF token provided belongs to the current session.
   If either of these fails, then the request is rejected
