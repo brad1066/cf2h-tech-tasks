@@ -18,4 +18,4 @@ CREATE TABLE IF NOT EXISTS users (
 
 -- Insert a default admin user
 INSERT INTO users (username, password, first_name, last_name, role)
-    VALUES ('admin', 'changeme', 'Admin', 'User', 'admin');
+    VALUES ('admin', '4cb9c8a8048fd02294477fcb1a41191a', 'Admin', 'User', 'admin');

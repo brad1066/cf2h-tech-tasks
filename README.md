@@ -10,6 +10,10 @@ connection being found in `/inc/definitions.php`. All the
 database connection settings that are configured beyond standard
 can also be found there.
 
+The username and password for logging in is (admin:changeme).
+The hashing method used is MD5, though in practice, a more
+secure method (such as SHA256) and salting would be used.
+
 ## Task 1
 
 Task 1 can be found from the `/login` route, and the code
