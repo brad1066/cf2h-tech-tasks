@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS cf2h;
 
-CREATE USER 'cf2h'@'localhost' IDENTIFIED BY 'cf2hPass';
+CREATE USER 'cf2h'@'localhost' IDENTIFIED BY 'cf2hPass!';
 GRANT ALL PRIVILEGES ON cf2h.* TO 'cf2h'@'localhost';
 FLUSH PRIVILEGES;
 
